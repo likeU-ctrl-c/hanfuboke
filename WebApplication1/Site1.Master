@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width:1000px;margin:0 auto">     
+            <asp:Label ID="Label1" runat="server"></asp:Label>
+            <asp:Button ID="Button1" runat="server" ForeColor="Red" OnClick="Button1_Click" Text="注销" BorderStyle="Double" />
+            &nbsp;<asp:Button ID="Button2" runat="server" BorderStyle="Double" ForeColor="#339933" OnClick="Button2_Click" Text="登录" />
+            <br />
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/image/index_biaoti.jpg" Height="143px" Width="996px" />
+        <br />
+        <hr />
+        <div style="background-color: #FFFFCC; text-align:center">
+            <asp:HyperLink ID="HyperLink5" runat="server" BorderStyle="Outset" ForeColor="Red" Height="20px" Width="84px" NavigateUrl="~/index.aspx">首页</asp:HyperLink>
+            &nbsp;
+            <asp:HyperLink ID="HyperLink1" runat="server" BorderStyle="Outset" ForeColor="Red" Height="20px" Width="84px" NavigateUrl="~/hfjj.aspx">汉服简介</asp:HyperLink>
+            &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" BorderStyle="Outset" ForeColor="Red" Height="20px" Width="84px" NavigateUrl="~/hfPicture.aspx">汉服图片</asp:HyperLink>
+            &nbsp;<asp:HyperLink ID="HyperLink3" runat="server" BorderStyle="Outset" ForeColor="Red" Height="20px" Width="84px" NavigateUrl="~/hfTalk.aspx">汉服论坛</asp:HyperLink>
+            &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" BorderStyle="Outset" ForeColor="Red" Height="20px" Width="84px" NavigateUrl="~/peopleCenter.aspx">个人中心</asp:HyperLink>
+            &nbsp;<asp:HyperLink ID="HyperLink6" runat="server" BorderStyle="Outset" ForeColor="Red" Height="20px" Width="84px" NavigateUrl="~/GuanliYuan.aspx" Visible="False">管理界面</asp:HyperLink>
+        </div>
+        <hr style="top: 20px; bottom: 20px;" />
+            <br />
+                <div id="ContentDiv">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                
+            <br />
+
+        <table style="width: 100%;">
+            <tr>
+                <td style="background-color: #0099FF">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; font-size: xx-small; color: #000080;">
+                    <p style="color: rgb(0, 0, 0); font-family: &quot;Microsoft YaHei&quot;; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: -webkit-center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+                        CopyRight © 2018-2019 lynweb All Right Reserved</p>
+                    <p style="color: rgb(0, 0, 0); font-family: &quot;Microsoft YaHei&quot;; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: -webkit-center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+                        版权所有 E-mail:1747912723@qq.com</p>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>
